@@ -8,51 +8,52 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#222;line-height:1.6;background:#fff}
-a{color:#c8611a}
+a{color:#2e7d32}
 .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-header{background:#1f2328;color:#fff;padding:14px 0;position:sticky;top:0;z-index:5}
+header{background:#111;color:#fff;padding:14px 0;position:sticky;top:0;z-index:5}
 header .wrap{display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;font-size:1.3rem;letter-spacing:1px}
-.logo span{color:#e8792b}
+.logo span{color:#e9d33f}
 header a.call{color:#fff;text-decoration:none;font-weight:600}
-.hero{background:linear-gradient(135deg,#2b3036,#4a4f55);color:#fff;padding:80px 0;text-align:center}
+.hero{background:linear-gradient(135deg,#111,#1f3d22);color:#fff;padding:80px 0;text-align:center}
 .hero h1{font-size:2.2rem;line-height:1.2;margin-bottom:14px}
 .hero p{font-size:1.15rem;max-width:650px;margin:0 auto 26px;opacity:.9}
-.btn{display:inline-block;background:#e8792b;color:#fff;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:700;border:0;font-size:1rem;cursor:pointer}
-.btn:hover{background:#c8611a}
+.btn{display:inline-block;background:#e9d33f;color:#111;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:700;border:0;font-size:1rem;cursor:pointer}
+.btn:hover{background:#2e7d32}
 section{padding:60px 0}
 section.alt{background:#f4f4f2}
 h2{font-size:1.8rem;margin-bottom:24px;text-align:center}
 .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .card{background:#fff;border:1px solid #e3e3e0;border-radius:8px;padding:22px}
-.card h3{margin-bottom:8px;color:#1f2328}
-.step{font-size:2rem;font-weight:800;color:#e8792b}
+.card h3{margin-bottom:8px;color:#111}
+.step{font-size:2rem;font-weight:800;color:#e9d33f}
 ul.why{list-style:none;max-width:700px;margin:0 auto}
 ul.why li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid #e3e3e0}
-ul.why li:before{content:"✓";position:absolute;left:0;color:#e8792b;font-weight:800}
+ul.why li:before{content:"✓";position:absolute;left:0;color:#e9d33f;font-weight:800}
 .center{text-align:center;max-width:700px;margin:0 auto}
 form{max-width:600px;margin:0 auto;display:grid;gap:14px}
 label{font-weight:600;font-size:.95rem}
 input,select,textarea{width:100%;padding:12px;border:1px solid #bbb;border-radius:6px;font:inherit;margin-top:4px}
 textarea{min-height:120px}
-footer{background:#1f2328;color:#bbb;padding:30px 0;text-align:center;font-size:.9rem}
-footer a{color:#e8792b}
+footer{background:#111;color:#bbb;padding:30px 0;text-align:center;font-size:.9rem}
+footer a{color:#e9d33f}
 @media(max-width:600px){.hero{padding:56px 0}.hero h1{font-size:1.7rem}section{padding:44px 0}}
 .gallery{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.gallery img{width:100%;height:240px;object-fit:cover;border-radius:6px}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="logo">MCC <span>CONCRETE</span></div><a class="call" href="tel:6039335386">(603) 933-5386</a></div></header>
+<header><div class="wrap"><div class="logo"><img src="img/logo.png" alt="MCC Concrete" style="height:52px;background:#fff;border-radius:6px;padding:3px"></div><a class="call" href="tel:6039335386">(603) 933-5386</a></div></header>
 
 <div class="hero"><div class="wrap">
 <h1>Concrete done right, managed start to finish</h1>
-<p>Foundations, slabs, flatwork and formwork for residential and commercial projects. One point of contact from quote to final pour.</p>
+<p>Excavation, foundations, slabs, flatwork and formwork for residential and commercial projects. One point of contact from quote to final pour.</p>
 <a class="btn" href="#quote">Get a free quote</a>
 </div></div>
 
 <section id="services"><div class="wrap">
 <h2>Services</h2>
 <div class="grid">
+<div class="card"><h3>Excavation &amp; Sitework</h3><p>Foundation digs, trenching, ledge and rock work, backfill, drainage and grading to get your site ready.</p></div>
 <div class="card"><h3>Foundations</h3><p>Footings, stem walls and foundation walls for homes, additions and commercial buildings.</p></div>
 <div class="card"><h3>Slabs</h3><p>Slab-on-grade for garages, shops, warehouses, and building pads.</p></div>
 <div class="card"><h3>Flatwork</h3><p>Driveways, sidewalks, patios, curbs and approaches.</p></div>
@@ -67,7 +68,7 @@ footer a{color:#e8792b}
 <div class="card"><div class="step">3</div><h3>Managed build</h3><p>Vetted crews do the work while we manage the job, keep you updated, and check quality through completion.</p></div>
 </div></div></section>
 
-<section class="alt" id="work"><div class="wrap"><h2>Recent work</h2><div class="gallery"><img src="img/job1.jpg" alt="Foundation excavation and forms set in ledge" loading="lazy"><img src="img/job2.jpg" alt="Poured foundation walls at dusk" loading="lazy"><img src="img/job3.jpg" alt="Stepped foundation walls with rebar" loading="lazy"><img src="img/job5.jpg" alt="Finishing a concrete slab" loading="lazy"><img src="img/job6.jpg" alt="Freshly screeded slab in wood forms" loading="lazy"><img src="img/job7.jpg" alt="Finished curved concrete walkway" loading="lazy"></div></div></section>
+<section class="alt" id="work"><div class="wrap"><h2>Recent work</h2><div class="gallery"><img src="img/ex1.jpg" alt="Excavated foundation hole with footings and rebar" loading="lazy"><img src="img/ex2.jpg" alt="Mini-excavator beside a formed foundation wall" loading="lazy"><img src="img/ex3.jpg" alt="Deep excavation against an existing building" loading="lazy"><img src="img/ex4.jpg" alt="Trench excavated around a poured foundation" loading="lazy"><img src="img/job1.jpg" alt="Foundation excavation and forms set in ledge" loading="lazy"><img src="img/job2.jpg" alt="Poured foundation walls at dusk" loading="lazy"><img src="img/job3.jpg" alt="Stepped foundation walls with rebar" loading="lazy"><img src="img/job5.jpg" alt="Finishing a concrete slab" loading="lazy"><img src="img/job6.jpg" alt="Freshly screeded slab in wood forms" loading="lazy"><img src="img/job7.jpg" alt="Finished curved concrete walkway" loading="lazy"><img src="img/job8.jpg" alt="Poured concrete retaining walls" loading="lazy"><img src="img/job9.jpg" alt="Foundation wall forms set and braced" loading="lazy"><img src="img/job10.jpg" alt="Concrete pump truck placing a foundation pour" loading="lazy"><img src="img/job11.jpg" alt="Finished foundation walls stripped and ready" loading="lazy"><img src="img/job12.jpg" alt="New precast-look concrete entry steps" loading="lazy"><img src="img/job13.jpg" alt="Boom pump pouring foundation walls" loading="lazy"><img src="img/job14.jpg" alt="Finished poured foundation walls" loading="lazy"><img src="img/job15.jpg" alt="Finished foundation for a home addition" loading="lazy"><img src="img/job16.jpg" alt="Excavator digging alongside foundation forms" loading="lazy"><img src="img/job17.jpg" alt="Mini-excavator working beside wall forms" loading="lazy"></div></div></section>
 
 <section id="why"><div class="wrap">
 <h2>Why MCC Concrete</h2>
@@ -95,7 +96,7 @@ footer a{color:#e8792b}
 <label>Email<input name="email" type="email" required></label>
 <label>Project type
 <select name="project_type">
-<option>Foundation</option><option>Slab</option><option>Flatwork (driveway, patio, sidewalk)</option><option>Formwork</option><option>Commercial / public bid</option><option>Other</option>
+<option>Excavation / sitework</option><option>Foundation</option><option>Slab</option><option>Flatwork (driveway, patio, sidewalk)</option><option>Formwork</option><option>Commercial / public bid</option><option>Other</option>
 </select></label>
 <label>Project location<input name="location"></label>
 <label>Project details (size, timeline, plans available?)<textarea name="details"></textarea></label>
